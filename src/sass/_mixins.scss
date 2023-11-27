@@ -1,0 +1,57 @@
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == "xs" {
+        @media (min-width: 576px) {
+            @content;
+        }
+    } @else if $breakpoint == "sm" {
+        @media (min-width: 768px) {
+            @content;
+        }
+    } @else if $breakpoint == "md" {
+        @media (min-width: 992px) {
+            @content;
+        }
+    } @else if $breakpoint == "lg" {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    } @else {
+        @media (min-width: $breakpoint) {
+            @content;
+        }
+    }
+}
+
+@mixin until-to($breakpoint) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+// Rotate
+@mixin rotate($deg) {
+    @include transform(rotate(#{$deg}deg));
+}
+
+// Scale
+@mixin scale($scale) {
+    @include transform(scale($scale));
+}
+
+// Translate
+@mixin translate($x, $y) {
+    @include transform(translate($x, $y));
+}
+
+// Skew
+@mixin skew($x, $y) {
+    @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+// Transform Origin
+@mixin transform-origin($origin) {
+    -webkit-transform-origin: $origin;
+    -moz-transform-origin: $origin;
+    -ms-transform-origin: $origin;
+    transform-origin: $origin;
+}

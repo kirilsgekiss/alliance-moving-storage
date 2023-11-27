@@ -1,0 +1,46 @@
+.btn-first {
+    border-radius: 5px;
+    padding: 16px 20px;
+    font-size: 16px;
+    color: $color-white;
+    background-color: $background-blue;
+    border: none;
+    transition: #328ba4 $ui-transition ease;
+    cursor: pointer;
+    &:hover {
+        background: #328ba4;
+    }
+
+    @media (max-width: 976px) {
+        display: none;
+    }
+}
+
+.btn-second {
+    padding: 14px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: $color-white;
+    background-color: $background-yellow;
+    border: none;
+    transition: background-color $ui-transition ease;
+}
+.btn-second:hover {
+    background-color: #ecb51d;
+}
+
+.btn-view {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 14px;
+    font-size: 16px;
+    text-align: center;
+    transition: border $ui-transition ease, background-color $ui-transition ease,
+        color $ui-transition ease;
+    color: $color-blue;
+    &:hover {
+        color: $color-grey;
+        background-color: $background-blue;
+    }
+}

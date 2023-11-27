@@ -1,0 +1,29 @@
+// Fonts
+$font-family: "Work Sans", sans-serif;
+
+// Colors
+$color-white: #fff;
+$color-second: #5b6e76;
+$color-second2: #738697;
+$color-blue: #3a98b2;
+$color-dark-blue: #142b35;
+$color-grey: #e0e0e0;
+
+// Backgrounds
+$background-white: #fff;
+$background-blue: #3a98b2;
+$background-yellow: #f2b91d;
+$background-dark: rgba(171, 210, 217, 0.0196078431);
+$background-dark2: rgba(55, 46, 46, 0.4);
+$background-sky: #abd2d9;
+$background-light: #e0e0e0;
+
+.border-blue {
+    border-color: #3a98b2;
+}
+
+// Content
+$container-offset: 60px;
+$container-mobile-offset: 16px;
+$container-width: 1320px + (60px * 2);
+$ui-transition: 0.3s;

@@ -1,0 +1,123 @@
+@import "_variables";
+
+@font-face {
+    font-family: "Work Sans";
+    src: url(../fonts/WorkSans-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url(../fonts/WorkSans-Medium.woff2) format("woff2");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url(../fonts/WorkSans-SemiBold.woff2) format("woff2");
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    font-family: $font-family;
+}
+* {
+    box-sizing: inherit;
+    margin: 0;
+}
+:after,
+:before {
+    box-sizing: inherit;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: $color-white;
+    margin: 0;
+    @media (max-width: 375.9px) {
+        font-size: 20px;
+    }
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 167%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: $color-dark-blue;
+    margin: 0;
+}
+
+h3 {
+    font-family: $font-family;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 167.3%;
+    letter-spacing: -0.18px;
+    margin: 0;
+}
+
+h4 {
+    color: $color-second2;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 165%;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+p {
+    color: $color-second;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 167%;
+    @media (max-width: 768px) {
+        line-height: 155.3%;
+    }
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 167.3%;
+    color: $color-dark-blue;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 $container-offset;
+    max-width: $container-width;
+
+    @media (max-width: 760px) {
+        padding: 0 $container-mobile-offset;
+    }
+}
